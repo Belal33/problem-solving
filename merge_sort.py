@@ -44,7 +44,7 @@ def merge(arr: list[int], start: int, mid: int, end: int) -> None:
         k += 1
 
 
-class IsertionTest(unittest.TestCase):
+class MergeSortTest(unittest.TestCase):
     def test_sort_1(self):
         arr = random.sample(range(10, 30), random.randint(3, 10))
         print(merge_sort(arr, 0, len(arr)), sorted(arr))
@@ -72,6 +72,11 @@ class IsertionTest(unittest.TestCase):
 
     def test_sort_6(self):
         arr = random.sample(range(10, 30), random.randint(3, 10))
+        print(merge_sort(arr, 0, len(arr)), sorted(arr))
+        self.assertEqual(merge_sort(arr, 0, len(arr)), sorted(arr))
+
+    def test_sort_7(self):
+        arr = [4, 2, 2, 8, 5, 3]
         print(merge_sort(arr, 0, len(arr)), sorted(arr))
         self.assertEqual(merge_sort(arr, 0, len(arr)), sorted(arr))
 

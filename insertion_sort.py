@@ -17,7 +17,7 @@ def insertion_sort(arr: list[int]) -> list[int]:
     return arr
 
 
-class IsertionTest(unittest.TestCase):
+class InsertionTest(unittest.TestCase):
     def test_sort_1(self):
         arr = random.sample(range(10, 30), random.randint(3, 10))
         print(insertion_sort(arr))
